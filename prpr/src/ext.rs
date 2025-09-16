@@ -110,7 +110,7 @@ impl SafeTexture {
         self
     }
 
-    pub fn with_filter(self, filter: GLenum) -> Self{
+    pub fn with_filter(self, filter: GLenum) -> Self {
         let id = self.0 .0.raw_miniquad_texture_handle().gl_internal_id();
         unsafe {
             use miniquad::gl::*;
